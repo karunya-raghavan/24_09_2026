@@ -9,11 +9,6 @@ class Solution(object):
             graph[prereq].append(course)
             in_degree[course] += 1
 
-        queue = deque([i for i in range(numCourses) if in_degree[i] == 0])
-        result = []
-
-        while queue:
-            current = queue.popleft()
-            result.append(current)
+   
 
          
