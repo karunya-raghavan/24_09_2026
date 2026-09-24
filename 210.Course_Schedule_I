@@ -5,9 +5,6 @@ class Solution(object):
         graph = defaultdict(list)
         in_degree = [0] * numCourses
 
-        for course, prereq in prerequisites:
-            graph[prereq].append(course)
-            in_degree[course] += 1
 
    
 
