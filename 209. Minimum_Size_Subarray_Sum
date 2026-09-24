@@ -14,8 +14,3 @@ class Solution {
                 curSum -= nums[left];
                 left++;
             }
-        }
-        
-        return minLen != Integer.MAX_VALUE ? minLen : 0;        
-    }
-}
