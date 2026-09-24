@@ -8,22 +8,7 @@ class Trie {
     public void insert(String word) {
         root.insert(word, 0);
     }
-    
-    public boolean search(String word) {
-        return root.search(word, 0);
-    }
-    
-    public boolean startsWith(String prefix) {
-        return root.startsWith(prefix, 0);
-    }
 
-    class Node {
-        Node[] nodes;
-        boolean isEnd;
-
-        Node() {
-            nodes = new Node[26];
-        }
 
     
          
