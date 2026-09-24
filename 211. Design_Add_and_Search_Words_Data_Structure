@@ -1,11 +1,4 @@
-class WordDictionary {
-    private WordDictionary[] children;
-    boolean isEndOfWord;
-    // Initialize your data structure here. 
-    public WordDictionary() {
-        children = new WordDictionary[26];
-        isEndOfWord = false;
-    }
+
     
 
     
