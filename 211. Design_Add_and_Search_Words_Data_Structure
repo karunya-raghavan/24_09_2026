@@ -7,15 +7,6 @@ class WordDictionary {
         isEndOfWord = false;
     }
     
-    // Adds a word into the data structure. 
-    public void addWord(String word) {
-        WordDictionary curr = this;
-        for(char c: word.toCharArray()){
-            if(curr.children[c - 'a'] == null)
-                curr.children[c - 'a'] = new WordDictionary();
-            curr = curr.children[c - 'a'];
-        }
-        curr.isEndOfWord = true;
-    }
+
     
 
