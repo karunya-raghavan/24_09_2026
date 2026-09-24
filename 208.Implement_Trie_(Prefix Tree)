@@ -25,13 +25,6 @@ class Trie {
             nodes = new Node[26];
         }
 
-        private void insert(String word, int idx) {
-            if (idx >= word.length()) return;
-            int i = word.charAt(idx) - 'a';
-            if (nodes[i] == null) {
-                nodes[i] = new Node();
-            }
-
-            if (idx == word.length()-1) nodes[i].isEnd = true;
+    
          
 
