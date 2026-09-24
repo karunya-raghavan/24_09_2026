@@ -46,13 +46,3 @@ class Trie {
 
         }
 
-        private boolean startsWith(String prefix, int idx) {
-            if (idx >= prefix.length()) return false;
-            Node node = nodes[prefix.charAt(idx) - 'a'];
-            if (node == null) return false;
-            if (idx == prefix.length() - 1) return true;
-
-            return node.startsWith(prefix, idx+1);
-        }
-    }
-}
