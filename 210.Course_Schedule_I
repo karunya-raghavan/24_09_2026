@@ -16,9 +16,4 @@ class Solution(object):
             current = queue.popleft()
             result.append(current)
 
-            for neighbor in graph[current]:
-                in_degree[neighbor] -= 1
-                if in_degree[neighbor] == 0:
-                    queue.append(neighbor)
-
-        return result if len(result) == numCourses else []
+         
